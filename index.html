@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <section class="pricing-section-page py-6" id="pricing_plans">
+        <div class="container pricing-container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <!-- Heading -->
+                    <h2 class="text-primary">
+                        Pricing plans
+                    </h2>
+                    <ul class="nav justify-content-center highlights mb-4 mb-md-4">
+                        <li class="nav-item px-md-2">
+                            <div class="px-2">
+                                <span class="green-tick-svg"></span>
+                                10 day free trial.
+                            </div>
+                        </li>
+                        <li class="nav-item px-md-2">
+                            <div class="px-2">
+                                <span class="green-tick-svg"></span>
+                                Support by qualified &amp; experienced lab technicians.
+                            </div>
+                        </li>
+                        <li class="nav-item px-md-2">
+                            <div class="px-2">
+                                <span class="green-tick-svg"></span>
+                                Fast and easy setup.
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="d-flex align-items-center justify-content-center mb-md-4 pricing-tab-menu">
+                        <li class="nav-item">
+                            <a class="highlights tab-button" data-id="pathlogy-plan">Pathology Lab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="highlights tab-button active" data-id="radiology-plan">Radiology Center</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="highlights tab-button" data-id="diagnostic-plan">Diagnostic center</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="d-flex align-items-center mb-5 mb-md-5 mt-4">
+                <div class="form-check d-flex align-items-center">
+                    <div class="d-flex align-items-center months-toggle-switch">
+                        <!-- Label -->
+                        <span class=""> Every 6 months </span>
+                        <!-- Switch -->
+                        <div class="custom-control custom-switch custom-switch-dark mx-3">
+                            <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price"
+                                data-target=".price">
+                            <label class="custom-control-label" for="billingSwitch"></label>
+                        </div>
+                        <!-- Label -->
+                        <span class=""> Yearly </span>
+                    </div>
+                    <div class="billing-only-box">
+                        <input class="form-check-input" type="checkbox" value="" id="billingOnly">
+                        <label class="form-check-label" for="billingOnly">
+                            Billing only (20% off)
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="alert alert-warning alert-dismissible fade show text-center price-estimation-alert d-none"
+                role="alert" style="display: none;">
+                Monthly pricing is only for your estimation.
+            </div>
+            <div class="pricing-tab-menu-content" id="price-tab">
+                <div class="tab-pane fade show" id="pathlogy-plan">
+                    <!-- / .row -->
+                    <div class="form-row">
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-6 mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Starter plan</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Pathology Lab Basic</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <div class="price full-price display-2 mb-0" data-yearly="5,000"
+                                            data-half-yearly="3,000" data-yearly-billing-only="4,000"
+                                            data-half-yearly-billing-only="2,400">3,000</div>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-center text-muted mb-5 pt-4">
+                                        Sms costs 20p per credit
+                                    </p>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Patient registration
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Pathology, outsource test, ECG billing
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Business reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex remove-feature">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Laboratory reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            User accounts
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Sms, Email, WhatsApp lab reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-6 mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Best value</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3 ml-5">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Pathology Lab Advanced</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <span class="price full-price display-2 mb-0" data-yearly="7,500"
+                                            data-half-yearly="4,500" data-yearly-billing-only="6,000"
+                                            data-half-yearly-billing-only="3,600">4,500</span>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex pt-4">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Everything in basic plan
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Permission management</p>
+                                    </div>
+                                    <!--<div class="d-flex">-->
+                                    <!--<div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">-->
+                                    <!--<span class="green-tick-circle"></span>-->
+                                    <!--</div>-->
+                                    <!--<p>Manage browser access</p>-->
+                                    <!--</div>-->
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Activity tracking</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Manage browser access (in beta)</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Complete</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3 ml-5">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Pathology Lab Premium</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <span class="price full-price display-2 mb-0" data-yearly="10,000"
+                                            data-half-yearly="6,000" data-yearly-billing-only="8,000"
+                                            data-half-yearly-billing-only="4,800">6,000</span>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex pt-4">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Everything in advanced plan
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            QR coded lab report (in Beta, on request)
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            LabSmart DocApp (20 doctor logins, in beta, on request)
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Business analysis
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Test count analysis
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Data export
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------------------------------------------------>
+                <!--------------------------Radiology Plan-------------------------------->
+                <!------------------------------------------------------------------------>
+                <div class="tab-pane fade show active" id="radiology-plan">
+                    <!-- / .row -->
+                    <div class="form-row">
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-6 mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Starter plan</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Radiology Center</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <div class="price full-price display-2 mb-0" data-yearly="5,000"
+                                            data-half-yearly="3,000" data-yearly-billing-only="4,000"
+                                            data-half-yearly-billing-only="2,400">3,000</div>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-center text-muted mb-5 pt-4">
+                                        Sms costs 20p per credit
+                                    </p>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Patient registration
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Digital X-ray, USG, CT Scan, MRI, ECG Billing
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Business reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex remove-feature">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            USG reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex remove-feature">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Digital X-ray reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            User accounts
+                                        </p>
+                                    </div>
+                                    <!--<div class="d-flex">-->
+                                    <!--&lt;!&ndash; Check &ndash;&gt;-->
+                                    <!--<div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">-->
+                                    <!--<span class="green-tick-circle"></span>-->
+                                    <!--</div>-->
+                                    <!--&lt;!&ndash; Text &ndash;&gt;-->
+                                    <!--<p>-->
+                                    <!--Sms, Email, WhatsApp lab reports-->
+                                    <!--</p>-->
+                                    <!--</div>-->
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-6 mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Best value</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3 ml-5">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Radiology Advanced</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <span class="price full-price display-2 mb-0" data-yearly="7,500"
+                                            data-half-yearly="4,500" data-yearly-billing-only="6,000"
+                                            data-half-yearly-billing-only="3,600">4,500</span>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex pt-4">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Everything in basic plan
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Permission management</p>
+                                    </div>
+                                    <!--<div class="d-flex">-->
+                                    <!--<div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">-->
+                                    <!--<span class="green-tick-circle"></span>-->
+                                    <!--</div>-->
+                                    <!--<p>Manage browser access</p>-->
+                                    <!--</div>-->
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Activity tracking</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Manage browser access (in beta)</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Complete</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3 ml-5">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Radiology Premium</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <span class="price full-price display-2 mb-0" data-yearly="10,000"
+                                            data-half-yearly="6,000" data-yearly-billing-only="8,000"
+                                            data-half-yearly-billing-only="4,800">6,000</span>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex pt-4">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Everything in advanced plan
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            LabSmart DocApp (20 doctor logins, in beta, on request)
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Business analysis
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Data export
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------------------------------------------------>
+                <!--------------------------Diagnostic Plan------------------------------->
+                <!------------------------------------------------------------------------>
+                <div class="tab-pane fade show" id="diagnostic-plan">
+                    <!-- / .row -->
+                    <div class="form-row">
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-6 mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Starter plan</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Diagnostic Center</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <div class="price full-price display-2 mb-0" data-yearly="10,000"
+                                            data-half-yearly="6,000" data-yearly-billing-only="8,000"
+                                            data-half-yearly-billing-only="4,800">6,000</div>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-center text-muted mb-5 pt-4">
+                                        Sms costs 20p per credit
+                                    </p>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Patient registration
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Pathology, Outsource test,
+                                            Digital X-ray, USG, CT Scan, MRI, ECG Billing
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Business reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex remove-feature">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Laboratory reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex remove-feature">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            USG reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex remove-feature">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Digital X-ray reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            User accounts
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Sms, Email, WhatsApp lab reports
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-6 mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Best value</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3 ml-5">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Diagnostic Advanced</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <span class="price full-price display-2 mb-0" data-yearly="15,000"
+                                            data-half-yearly="9,000" data-yearly-billing-only="12,000"
+                                            data-half-yearly-billing-only="7,200">9,000</span>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex pt-4">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Everything in basic plan
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Permission management</p>
+                                    </div>
+                                    <!--<div class="d-flex">-->
+                                    <!--<div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">-->
+                                    <!--<span class="green-tick-circle"></span>-->
+                                    <!--</div>-->
+                                    <!--<p>Manage browser access</p>-->
+                                    <!--</div>-->
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Activity tracking</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <p>Manage browser access (in beta)</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <!-- Card -->
+                            <div class="card card-shadow mb-md-0 pricing-card">
+                                <div class="card-body">
+                                    <div class="offer-ribbon">
+                                        <span>Complete</span>
+                                    </div>
+                                    <!-- Preheading -->
+                                    <div class="text-center mb-3 ml-5">
+                                        <span class="badge badge-pill badge-primary-soft">
+                                            <span class="h6 text-uppercase">Diagnostic Premium</span>
+                                        </span>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="h2 mb-0 mt-2">₹</span>
+                                        <span class="price full-price display-2 mb-0" data-yearly="20,000"
+                                            data-half-yearly="12,000" data-yearly-billing-only="16,000"
+                                            data-half-yearly-billing-only="9,600">12,000</span>
+                                        <div class="pricing-postfix-text">
+                                            <span>+&nbsp;GST</span>
+                                            <br>
+                                            <span class="duration-text" data-yearly="Every year"
+                                                data-half-yearly="Every 6&nbsp;months">Every 6&nbsp;months</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <span class="badge badge-pill badge-secondary-soft">
+                                            <span class="text-uppercase offer-period-text"></span>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex pt-4">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Everything in advanced plan
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            QR coded lab report (in Beta, on request)
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            LabSmart DocApp (20 doctor logins, in beta, on request)
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Business analysis
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Test count analysis
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Data export
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <!-- Check -->
+                                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                                            <span class="green-tick-circle"></span>
+                                        </div>
+                                        <!-- Text -->
+                                        <p>
+                                            Includes <span class="cases-included" data-half-yearly="6,000"
+                                                data-yearly="12,000">6,000</span> bills free
+                                        </p>
+                                    </div>
+                                    <!-- Button -->
+                                    <a href="/#signup_now" class="btn btn-block btn-primary-soft">
+                                        Try it for free
+                                        <span class="right-arrow-blue ml-3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
